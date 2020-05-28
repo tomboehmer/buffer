@@ -24,6 +24,8 @@ maximum amount of data they can hold in addition to how much data is currently b
 
 # Operations
 Some operations are provided to manipulate `data` while keeping `count` updated.
+Even though the operations are prefixed with `buffer_` they will work on slices as well, but
+in that case no bounds checking can be performed.
 
 ## Copy, Append and Equality
 Let `BUFFER(T, N) *buf, *lhs, *rhs; T *ptr; size_t cnt`.
